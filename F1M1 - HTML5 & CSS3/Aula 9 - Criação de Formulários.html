@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Formulários</title>
+</head>
+
+<body>
+    <h1>Criação de formulários</h1>
+    <hr>
+    <form method="POST">
+        <p>
+            <label for="txtNomeCompleto">Nome Completo</label><br>
+            <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Digite seu Nome">
+        </p>
+        <p>
+            <label for="txtEmail">Email</label><br>
+            <input type="text" name="Email" id="txtEmail" placeholder="Digite seu Email">
+        </p>
+
+        <fieldset>
+            <legend>Cargo Pretendido</legend>
+            <input type="radio" name="Cargo" id="rdProgramador" value="P">
+            <label for="rdProgramador">Programador</label><br>
+            <input type="radio" name="Cargo" id="rdWebDesigner" value="W">
+            <label for="rdWebDesigner">Web Designer</label>
+        </fieldset>
+        <p>
+            <input type="checkbox" name="Aceito" id="chkAceito">
+            <label for="chkAceito">Aceito os termos de uso.</label>
+        </p>
+        <p>
+            <label for="slctEstado">Estado</label><br>
+            <select name="Estado" id="slctEstado">
+                <optgroup label="Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="slctLinguagens">Linguagens</label><br>
+            <select name="Linguagens" id="slctLinguagens" size="3" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>      
+
+            </select>
+        </p>
+
+        <p>
+            <label for="txtCidade">Cidade</label><br>
+            <input type="text" name="Cidade" id="txtCidade" list="cidades">
+            <datalist id="cidades">
+                <option value="Rio de Janeiro"></option>
+                <option value="Espirito Santo"></option>                
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="txtCurriculo">Curriculo</label><br>
+            <textarea name="Curriculo" id="txtCurriculo" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Formulário">
+        </p>
+
+    </form>
+</body>
+
+</html>
