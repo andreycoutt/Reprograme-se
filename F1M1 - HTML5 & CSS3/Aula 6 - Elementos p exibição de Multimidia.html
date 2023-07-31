@@ -6,6 +6,25 @@
     <title>Elementos HTML para exibição de Multimídia</title>
 </head>
 <body>
-    
+    <h1>Conteudo mundimidia</h1>
+    <hr>
+
+    <video controls width="800" height="600" poster="multimidia/popeye_for_president.jpg">
+        <source src="multimidia/PopeyeforPresident.mp4" type="video/mp4">
+        <track kind="subtitles" srclang="en-us" src="multimidia/PopeyeforPresident.en-us.vtt" label="English"> 
+        <track kind="subtitles" srclang="pt-br" src="multimidia/PopeyeforPresident.pt-br.vtt" label="Português" default>
+        seu navegador nao suporta videos HTML5.
+    </video>
+    <hr>
+    <h2>Video unico</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-BtRMn-iJ0Y?controls=0&t=120&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <h2>Playlist</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0YuSuacUEWuLNDAAJxATh54w_XmrLkk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <hr>
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="multimidia/piada.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html> 
