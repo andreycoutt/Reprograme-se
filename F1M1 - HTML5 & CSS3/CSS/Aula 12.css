@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;
+}
+
+p{
+    color: black;
+    background-color: blueviolet;
+    border-color: black ;
+    border-style: groove;
+    border-width: 3px;
+    border-left-width: 15px;    
+    border-left-color: wheat;
+    border-radius: 20px;
+}
+
+#p1{
+    margin: 50px auto;
+    padding: 25px;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 2    px;
+    outline-offset: 4px;
+}
