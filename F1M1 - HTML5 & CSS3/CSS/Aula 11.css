@@ -1,0 +1,38 @@
+h1{
+    color: blue;
+}
+
+i{
+    color: red;
+}
+
+ul{
+    background:black;
+}
+
+p{
+    color: orange;
+}
+
+
+
+.vermelho{
+    color: red;
+}
+
+
+
+
+#p2{
+    font-size: 24px;
+}
+
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1 i{
+    color: yellow;
+}
