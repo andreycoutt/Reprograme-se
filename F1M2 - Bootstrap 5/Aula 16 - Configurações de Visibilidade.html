@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        div.border{
+            height: 150px;
+        }
+    </style>
+    <title>Configurações de Visibilidade</title>
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark d-print-none">
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+
+    <article class="container my-3">
+        <h1 class="mb-4">Titulo do Artigo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore nulla ad quae, at, quod eos, nihil eveniet modi voluptatem maxime vel animi. Porro vitae perspiciatis itaque illum, praesentium adipisci molestiae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque quidem non laudantium corrupti incidunt veniam totam cum odio? Est sint officia veniam odio. Facilis pariatur natus unde nihil deserunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus dolorem mollitia corrupti, nisi labore placeat? Quidem totam, nemo ipsam molestias deserunt labore tempora sapiente accusamus, nisi architecto pariatur adipisci?</p>
+        <p class="d-none d-print-block">Fonte: meusite.com.br</p>
+    </article>
+
+
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+    <div class="p-4 col-3 m-3 bg-warning invisible"></div>
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+
+
+    
+
+
+
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum odio fuga vero reprehenderit, laudantium deserunt aliquam quasi repellendus, nihil magnam excepturi accusantium porro neque incidunt earum! Doloribus impedit voluptas voluptatem?</div>
+            <div class="border p-2 col-3 overflow-hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quod? Voluptate inventore qui beatae, est nisi porro repellendus aspernatur nostrum rerum distinctio, quaerat alias eos consequuntur dicta iusto hic quos.</div>
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sit neque non facere voluptates commodi sint at unde quisquam tenetur? Tempora veniam atque recusandae facere officia ipsa at suscipit sed?</div>
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi odio facere unde a sit voluptates, nesciunt iste perferendis ea doloremque temporibus dolorum aliquam voluptatibus quia molestiae eligendi? Sunt, aspernatur amet.</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="p-5 bg-danger"></div>
+    <div class="p-4 col-3 d-none d-lg-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block m-3 bg-success"></div>
+    <div class="p-4 col-3 d-block m-3 bg-warning"></div>
+
+</body>
+
+</html>
