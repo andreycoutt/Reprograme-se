@@ -9,7 +9,75 @@
 </head>
 
 <body>
-    
+    <div class="container p-5">
+        <hr>
+        <hr>
+        <h1 class="display-3">Endereço</h1>
+        <hr>
+        <form method="post" class="needs-validation" novalidate> 
+            <div class="row mb-3 g-3">
+                <div class="col-7">
+                    <label for="logradouro" class="form label">logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" required>
+                    <div class="invalid-feedback">
+                        Você deve informar o logradouro.
+                    </div>
+                </div>
+                <div class="col-2">
+                    <label for="numero" class="form label">numero</label>
+                    <input type="text" class="form-control" id="numero">
+                    <div class="valid-feedback">
+                        Numero informado corretamente.
+                    </div>
+                </div>
+                <div class="col-3">
+                    <label for="complemento" class="form label">complemento</label>
+                    <input type="text" class="form-control" id="complemento">
+                </div>
+                <div class="col-6">
+                    <label for="bairro" class="form label">bairro</label>
+                    <input type="text" class="form-control" id="bairro">
+                </div>
+                <div class="col-6">
+                    <label for="Cidade" class="form label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="col-6">
+                    <label for="Estado" class="form label">Estado</label>
+                    <input type="text" class="form-control" id="estado">
+                </div>
+                <div class="col-2">
+                    <label for="cep" class="form label">CEP</label>
+                    <input type="text" class="form-control" id="cep" pattern="[0-9]{8}" required>
+                    <div class="invalid-feedback">
+                        Você deve informar o CEP.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+    <script>
+        (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
 </body>
 
 </html>
