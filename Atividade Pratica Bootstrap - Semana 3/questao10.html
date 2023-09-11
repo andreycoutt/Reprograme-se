@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Questão 10</title>
+</head>
+
+<body>
+  <div class="container my-3">
+    <p><a href="index.html">Voltar ao Índice</a></p>
+    <h1 class="display-2">Questão 10</h1>
+    <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7
+      adiconando as seguintes situações de validação de campos:</p>
+    <ul class="lead">
+      <li>O campo Nome Completo deve estar marcado como válido;</li>
+      <li>O campo CPF deve estar marcado como inválido e com a mensagem de validação "Campo obrigatório";</li>
+      <li>O campo Data de Nascimento deve estar marcado como válido;</li>
+      <li>O campo Gênero deve estar marcado como inválido e com a mensagem de validação "Campo obrigatório";</li>
+      <li>O campo Endereço deve estar marcado como válido.</li>
+    </ul>
+    <p class="lead">*Os campos válidos devem ter valores fictícios preenchidos nos campos.</p>
+    <hr>
+  </div>
+  <!-- Valor: 1.5 pontos -->
+  <!-- FAZER AQUI -->
+  <div class="container">
+    <h2>Cadastro de Cliente</h2>
+    <hr>
+    <form method="post" class="needs-validation" novalidate>
+      <div class="row mb-3">
+        <div class="input-group mb-3">
+          <label for="NomeCompleto" class="input-group-text "> <i class="bi bi-person"></i> </label>
+          <input type="text" class="form-control " id="NomeCompleto" placeholder="Nome Completo" required>
+          <div class="invalid-feedback ">
+            Campo Obrigatório
+          </div>
+          <div class="valid-feedback ">
+            Campo preenchido corretamente.
+          </div>
+        </div>
+
+        <div class="col-3 mb-3">
+          <div class="input-group ">
+            <label for="CPF" class="input-group-text "> <i class="bi bi-person-vcard"></i> </label>
+            <input type="text" class="form-control " id="CPF" placeholder="CPF" required>
+            <div class="invalid-feedback ">
+              Campo Obrigatório
+            </div>
+            <div class="valid-feedback ">
+              Campo preenchido corretamente.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div class="input-group">
+            <label for="DataNascimento" class="input-group-text "> <i class="bi bi-balloon-heart"></i> </label>
+            <input type="date" class="form-control " id="DataNascimento" placeholder="dd/mm/aaaa" required>
+            <div class="invalid-feedback ">
+              Campo Obrigatório
+            </div>
+            <div class="valid-feedback ">
+              Campo preenchido corretamente.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-5 mb-3">
+          <div class="input-group">
+
+
+            <label for="Genero" class="input-group-text"> <i class="bi bi-gender-trans"></i> </label>
+
+            <select class="form-select" required>
+
+              <option value="">Gênero</option>
+              <option value="">Masculino</option>
+              <option value="">Feminino</option>
+              <option value="">Prefiro nao dizer</option>
+
+            </select>
+
+            <div class="invalid-feedback mb-3">
+              Campo Obrigatório
+            </div>
+            <div class="valid-feedback ">
+              Campo preenchido corretamente.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <label for="msg" class="input-group-text"><i class="bi bi-house-add-fill"></i></label>
+          <textarea name="" id="msg" cols="30" rows="10" class="form-control" style="height:100px"
+            placeholder="Endereço Completo" required></textarea>
+          <div class="invalid-feedback ">
+            Campo Obrigatório
+          </div>
+          <div class="valid-feedback ">
+            Campo preenchido corretamente.
+          </div>
+        </div>
+
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Salvar</button>
+
+    </form>
+  </div>
+  <script>
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>
+
+</html>
