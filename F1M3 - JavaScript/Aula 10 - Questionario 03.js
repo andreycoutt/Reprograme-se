@@ -1,4 +1,4 @@
-i = 0
+i = 0;
 while (i < 3) {
   j = 0;
   while (j < 3) {
