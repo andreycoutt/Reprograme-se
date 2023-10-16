@@ -19,3 +19,9 @@ var comp = myArray.push('3');
 
 console.log(myArray);
 console.log(comp);
+
+var myArray = ['1', '2', '3'];
+var ultimo = myArray.pop();
+
+console.log(myArray);
+console.log(ultimo);
