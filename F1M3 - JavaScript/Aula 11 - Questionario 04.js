@@ -1,5 +1,6 @@
-var estados = ['ES', 'RJ', 'SP', 'MG'];
-estados.unshift('MT');
-estados.splice(2,2, 'AC', 'AL', 'AP');
+var numeros = [];
+numeros[0] = 10;
+numeros[0] = 20;
+numeros[0] = 30;
 
-console.log(estados);
+console.log(numeros);
