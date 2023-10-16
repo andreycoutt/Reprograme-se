@@ -42,3 +42,9 @@ var myArray = ['1', '2', '3', '4', '5'];
 myArray.splice(1, 2, 'a', 'b', 'c', 'd');
 
 console.log(myArray);
+
+var myArray = ['neve', 'chuva', 'fogo'];
+myArray.sort();
+
+console.log(myArray);
+
