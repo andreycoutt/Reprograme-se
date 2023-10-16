@@ -25,3 +25,20 @@ var ultimo = myArray.pop();
 
 console.log(myArray);
 console.log(ultimo);
+
+var myArray = ['1', '2', '3'];
+var primeiro = myArray.shift();
+
+console.log(myArray);
+console.log(primeiro);
+
+var myArray = ['1', '2', '3'];
+var un = myArray.unshift('4', '5');
+
+console.log(myArray);
+console.log(un);
+
+var myArray = ['1', '2', '3', '4', '5'];
+myArray.splice(1, 2, 'a', 'b', 'c', 'd');
+
+console.log(myArray);
