@@ -51,7 +51,7 @@ console.log(myArray);
 var myArray = ['a', 'b', 'a', 'b', 'a'];
 console.log(myArray.indexOf('b'));
 console.log(myArray.indexOf('b', 2));
-console.log(myArray.indexOf('z'));
+console.log(myArray.indexOf('x'));
 
 
 
