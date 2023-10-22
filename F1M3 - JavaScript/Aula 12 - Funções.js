@@ -31,3 +31,24 @@ console.log("Circulo", "\nRaio:", raio, "\nÁrea:", area_circulo);
 
 area_retangulo = calcular_area(comprimento, largura);
 console.log("Retângulo", "\nComprimento:", comprimento, "\nLargura:", largura, "\nÁrea:", area_retangulo);
+
+console.log("______________________________\n")
+
+var a = 1
+
+function f1(){
+  b = 2;
+  console.log("f1() - a", a)
+  console.log("f1() - b", b)
+}
+
+function f2(){
+  console.log("f2() - a", a)
+  console.log("f2() - b", b)
+}
+
+f1()
+f2()
+
+console.log("a:", a);
+console.log("b:", b);
