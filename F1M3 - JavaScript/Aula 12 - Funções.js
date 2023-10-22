@@ -11,5 +11,6 @@ function mostrar_mensagem(){
   }
   
   mostrar_mensagem();
-  calcular_produto();
-  calcular_quociente();
+  calcular_produto(4, 7.5, 2.3);
+  q = calcular_quociente(11, 5);
+  console.log(q);
