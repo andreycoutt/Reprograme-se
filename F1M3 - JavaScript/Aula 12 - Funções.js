@@ -52,3 +52,7 @@ f2()
 
 console.log("a:", a);
 console.log("b:", b);
+
+console.log("______________________________\n")
+
+
