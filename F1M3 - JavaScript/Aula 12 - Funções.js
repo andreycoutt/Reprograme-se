@@ -55,4 +55,12 @@ console.log("b:", b);
 
 console.log("______________________________\n")
 
+var q = function(n){return n*n}
+var resultado = q(4);
+console.log(resultado);
 
+console.log("\n");
+
+var s = function soma(n1, n2){return n1 + n2}
+resultado = s(3, 4);
+console.log(resultado);  
