@@ -15,7 +15,7 @@
 
 // Refatore seu código. Para isso, crie 2 funções, a saber:
 // *funçao para calcular o IR: esta função deve receber como parâmetro o salário bruto e a renda per capta, e, retornar ao final o valor IR;
-// *função para calcular a quantidade de salários liquidos menores que a média: esta funçao deve receber como parametros o array de salários líquidos e a média dos salarios liquidos, e, retornar a quantidade de salários líquidos menores que a média;
+// *função para calcular a quantidade de salários liquidos menores que a média: esta funçao deve receber como parametros o array de salários líquidos e a média dos salarios liquidos, e, retornar a quantidade de salários líquidos menores que a média
 
 const prompt = require('prompt-sync')();
 
