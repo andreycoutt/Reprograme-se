@@ -39,20 +39,8 @@ for(var i = 1; i <= 5; i++){
 
   renda_per_capita = salario_bruto / (dependentes + 1);
 
-  if(renda_per_capita >= 500){
 
-      if(salario_bruto > 0 && salario_bruto < 1903.98){
-          var imposto_renda = salario_bruto * 5/100; // ou 0.05
-      } else if(salario_bruto > 1903.98 && salario_bruto < 2826.66){
-          var imposto_renda = salario_bruto * 7.5/100; // ou 0.075
-      }else{
-          var imposto_renda = salario_bruto * 15/100; // ou 0.15
-      }
-  }else{
-      imposto_renda = 0;
-      console.log("Olá ", nome, "você esta isento(a) de pagar imposto de renda");
-  }
-
+  var imposto_renda = calcular_imposto_renda(salario_bruto, renda_per_capita);
   var salario_liquido = salario_bruto - imposto_renda;
 
   console.log("______________________\n");
@@ -78,3 +66,25 @@ for (var i = 0; i <= 4; i++){
 
 console.log("A média dos salários liquidos é:", media);
 console.log("O numéro de pessoas com salário liquido menor que a média é:", qtd_pessoas);
+
+
+
+
+
+
+function calcular_imposto_renda(salario_bruto, renda_per_capita){
+  if(renda_per_capita >= 500){
+
+      if(salario_bruto > 0 && salario_bruto < 1903.98){
+          var imposto_renda = salario_bruto * 5/100; // ou 0.05
+      } else if(salario_bruto > 1903.98 && salario_bruto < 2826.66){
+          var imposto_renda = salario_bruto * 7.5/100; // ou 0.075
+      }else{
+          var imposto_renda = salario_bruto * 15/100; // ou 0.15
+      }
+  }else{
+      imposto_renda = 0;
+      console.log("Olá ", nome, "você esta isento(a) de pagar imposto de renda");
+  }
+  return imposto_renda;
+}
