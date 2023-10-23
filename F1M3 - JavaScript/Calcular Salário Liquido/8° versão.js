@@ -23,16 +23,16 @@ const prompt = require('prompt-sync')();
 var salarios = [];
 var soma = 0;
 var media;
-var qtd_pessoas = 0;
+var qtd_pessoas;
 
-for(var i = 1; i <= 5; i++){
+for (var i = 1; i <= 5; i++) {
 
   console.log(i, "° Pessoa");
   nome = prompt("Digite seu nome: ");
   salario_bruto = parseFloat(prompt("Digite seu salário: "));
   dependentes = parseInt(prompt("Digite a quantidade de dependentes: "));
 
-  for (var j = i; j <= dependentes; j++){
+  for (var j = i; j <= dependentes; j++) {
     ganho = parseFloat(prompt("Digite seu ganho mensal: "));
     salario_bruto = salario_bruto + ganho;
   }
@@ -58,11 +58,9 @@ for(var i = 1; i <= 5; i++){
 
 media = soma / 5;
 
-for (var i = 0; i <= 4; i++){ 
-  if (salarios[i] < media){
-    qtd_pessoas =  qtd_pessoas + 1;
-  }
-}
+qtd_pessoas = calcular_qtd_menores(salarios, media);
+
+
 
 console.log("A média dos salários liquidos é:", media);
 console.log("O numéro de pessoas com salário liquido menor que a média é:", qtd_pessoas);
@@ -72,19 +70,32 @@ console.log("O numéro de pessoas com salário liquido menor que a média é:", 
 
 
 
-function calcular_imposto_renda(salario_bruto, renda_per_capita){
-  if(renda_per_capita >= 500){
+function calcular_imposto_renda(salario_bruto, renda_per_capita) {
+  if (renda_per_capita >= 500) {
 
-      if(salario_bruto > 0 && salario_bruto < 1903.98){
-          var imposto_renda = salario_bruto * 5/100; // ou 0.05
-      } else if(salario_bruto > 1903.98 && salario_bruto < 2826.66){
-          var imposto_renda = salario_bruto * 7.5/100; // ou 0.075
-      }else{
-          var imposto_renda = salario_bruto * 15/100; // ou 0.15
-      }
-  }else{
-      imposto_renda = 0;
-      console.log("Olá ", nome, "você esta isento(a) de pagar imposto de renda");
+    if (salario_bruto > 0 && salario_bruto < 1903.98) {
+      var imposto_renda = salario_bruto * 5 / 100; // ou 0.05
+    } else if (salario_bruto > 1903.98 && salario_bruto < 2826.66) {
+      var imposto_renda = salario_bruto * 7.5 / 100; // ou 0.075
+    } else {
+      var imposto_renda = salario_bruto * 15 / 100; // ou 0.15
+    }
+  } else {
+    imposto_renda = 0;
+    console.log("Olá ", nome, "você esta isento(a) de pagar imposto de renda");
   }
   return imposto_renda;
+}
+
+
+
+
+function calcular_qtd_menores(salarios, media) {
+  var qtd_pessoas = 0;
+  for (var i = 0; i <= 4; i++) {
+    if (salarios[i] < media) {
+      qtd_pessoas = qtd_pessoas + 1;
+    }
+  }
+  return qtd_pessoas;
 }
