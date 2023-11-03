@@ -32,3 +32,13 @@ cidade_0.style.borderLeftColor = "Yellow";
 var array_cidade_mg = document.getElementsByClassName("cidade-mg");
 var cidade_mg_1 = array_cidade_mg[1];
 cidade_mg_1.style.borderLeftColor = "Yellow";
+
+
+//querySelector
+var pais = document.querySelector("#pais_brasil");
+pais.style.border = "2px solid green";
+pais.style.textAlign = "center";  
+
+var cidade_es_0 = document.querySelector(".cidade-es");
+cidade_es_0.style.textAlign = "center";
+cidade_es_o.style.color = "blue";
