@@ -10,3 +10,5 @@ corpo.style.background = "Gray";
 // getElementById
 var h1_Brasil = document.getElementById("pais_brasil");
 h1_Brasil.style.background = "Yellow";
+document.write("<p> innerText: " + h1_Brasil.innerText);
+document.write("<p> innerHTML: " + h1_Brasil.innerHTML) 
