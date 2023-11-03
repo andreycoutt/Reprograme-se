@@ -4,7 +4,7 @@ document.write(document.title);
 document.write(document.characterSet);
 
 var corpo = document.body;
-corpo.style.background = "Blue";
+corpo.style.background = "Gray";
 
 
 // getElementById
