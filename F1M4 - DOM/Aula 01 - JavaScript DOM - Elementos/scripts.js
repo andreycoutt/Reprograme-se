@@ -26,3 +26,9 @@ h2_mg.style.color = "DarkRed";
 var array_cidade = document.getElementsByName("cidade");
 var cidade_0 =  array_cidade[0];
 cidade_0.style.borderLeftColor = "Yellow";
+
+
+//getElementByClassName
+var array_cidade_mg = document.getElementsByClassName("cidade-mg");
+var cidade_mg_1 = array_cidade_mg[1];
+cidade_mg_1.style.borderLeftColor = "Yellow";
