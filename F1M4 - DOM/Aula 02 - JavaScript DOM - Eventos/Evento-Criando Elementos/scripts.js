@@ -15,7 +15,7 @@ function trocarCor(e){
 
 function adicionar(){
     var div = document.createElement("div");
-    div.className = "quadrado";
-    div.style.backgroundColor = "rgb{100,100,100}";
-    container.appendChild{div};
+    div.className = "quadrado"
+    div.style.backgroundColor = "rgb(100,100,100)";
+    container.appendChild(div);
 }
