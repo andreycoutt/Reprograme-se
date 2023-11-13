@@ -1,6 +1,5 @@
 var btn = document.querySelector('button');
 btn.addEventListener('click', trocarCor);
-
 function random(number){
     return Math.floor(Math.random() * (number + 1));
 }
