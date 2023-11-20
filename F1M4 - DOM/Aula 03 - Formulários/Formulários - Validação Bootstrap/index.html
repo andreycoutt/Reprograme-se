@@ -19,13 +19,13 @@
         
         <div class="form-row">
             <label for="txtEmail">E-mail</label>
-            <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" class="form-control" class="form-control" required>
+            <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" class="form-control" required>
             <div class="invalid-feedback">Informe o e-mail corretamente.</div>
         </div>    
 
         <div class="form-row">
             <label for="txtTelefone">Telefone</label>
-            <input type="text" id="txtTelefone" name="telefone" placeholder="(00) 00000-0000" pattern="(\d{2}\)\d{5}-\d{4}" required>
+            <input type="text" id="txtTelefone" name="telefone" placeholder="(00) 00000-0000" pattern="(\d{2}\)\d{5}-\d{4}" class="form-control" required>
             <div class="invalid-feedback">Informe o telefone corretamente.</div>
         </div>
 
@@ -47,12 +47,12 @@
 
         <div class="form-row">
             <label for="txtConfSenha">Confirmação de Senha</label>
-            <input type="password" name="ConfSenha" id="txtConfSenha">
+            <input type="password" name="ConfSenha" id="txtConfSenha" class="form-control">
             <div class="invalid-feedback">Informe Corretamente.</div>
         </div>
 
         <input type="submit" class="btn" value="Enviar">
-        
+
     </form>
 
     <script src="scripts.js"></script>
