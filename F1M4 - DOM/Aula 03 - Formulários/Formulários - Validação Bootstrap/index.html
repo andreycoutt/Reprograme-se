@@ -14,19 +14,32 @@
         <div class="form-row">
             <label for="txtNome">Nome</label>
             <input type="text" id="txtNome" name="nome" placeholder="Fulano de Tal" required>
-            <div class="invalid-feedback">Informe Corretamente.</div>
+            <div class="invalid-feedback">Informe o nome corretamente.</div>
+        </div>
+        
+        <div class="form-row">
+            <label for="txtEmail">E-mail</label>
+            <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" required>
+            <div class="invalid-feedback">Informe o e-mail corretamente.</div>
+        </div>    
+
+        <div class="form-row">
+            <label for="txtTelefone">Telefone</label>
+            <input type="text" id="txtTelefone" name="telefone" placeholder="(00) 00000-0000" pattern="(\d{2}\)\d{5}-\d{4}" required>
+            <div class="invalid-feedback">Informe o telefone corretamente.</div>
         </div>
 
-        <label for="txtEmail">E-mail</label>
-        <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" required>
-        <label for="txtTelefone">Telefone</label>
-        <input type="text" id="txtTelefone" name="telefone" placeholder="(00) 00000-0000" pattern="(\d{2}\)\d{5}-\d{4}" required>
-        <label for="SelSexo">Sexo</label>
-        <select id="SelSexo" name="sexo" required>
-            <option value="" selected>Selecione o sexo</option>
-            <option value="M">Masculino</option>
-            <option value="F">Feminino</option>
-        </select>
+
+        <div class="form-row">
+            <label for="SelSexo">Sexo</label>
+            <select id="SelSexo" name="sexo" required>
+                <option value="" selected>Selecione o sexo</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <div class="invalid-feedback">Informe o sexo corretamente.</div>
+        </div>
+
 
         <label for="txtSenha">Senha</label>
         <input type="password" id="txtSenha" name="senha" required>
