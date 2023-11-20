@@ -14,18 +14,6 @@
     })
 })()
 
-
-
-
-
-
-
-
-
-
-
-
-
 const txtSenha = document.getElementById("txtSenha");
 const txtConfSenha = document.getElementById("txtConfSenha");
 
