@@ -41,13 +41,18 @@
 
         <div class="form-row">
             <label for="txtSenha">Senha</label>
-            <input type="password" id="txtSenha" name="senha" required>
+            <input type="password" id="txtSenha" name="senha" class="form-control" required>
             <div class="invalid-feedback">Informe a senha corretamente.</div>
         </div>
 
-        <label for="txtConfSenha">Confirmação de Senha</label>
-        <input type="password" name="ConfSenha" id="txtConfSenha">
+        <div class="form-row">
+            <label for="txtConfSenha">Confirmação de Senha</label>
+            <input type="password" name="ConfSenha" id="txtConfSenha">
+            <div class="invalid-feedback">Informe Corretamente.</div>
+        </div>
+
         <input type="submit" class="btn" value="Enviar">
+        
     </form>
 
     <script src="scripts.js"></script>
