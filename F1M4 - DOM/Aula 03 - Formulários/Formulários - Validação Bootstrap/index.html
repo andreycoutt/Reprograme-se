@@ -13,13 +13,13 @@
     <form name="form1" action="#" method="GET" class="row g-3 needs-validation" novalidate>
         <div class="form-row">
             <label for="txtNome">Nome</label>
-            <input type="text" id="txtNome" name="nome" placeholder="Fulano de Tal" required>
+            <input type="text" id="txtNome" name="nome" placeholder="Fulano de Tal" class="form-control" required>
             <div class="invalid-feedback">Informe o nome corretamente.</div>
         </div>
         
         <div class="form-row">
             <label for="txtEmail">E-mail</label>
-            <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" required>
+            <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" class="form-control" class="form-control" required>
             <div class="invalid-feedback">Informe o e-mail corretamente.</div>
         </div>    
 
@@ -30,8 +30,8 @@
         </div>
 
         <div class="form-row">
-            <label for="SelSexo">Sexo</label>
-            <select id="SelSexo" name="sexo" required>
+            <label for="SelSexo" class="form-label">Sexo</label>
+            <select id="SelSexo" name="sexo" class="form-select" required>
                 <option value="" selected>Selecione o sexo</option>
                 <option value="M">Masculino</option>
                 <option value="F">Feminino</option>
@@ -39,9 +39,12 @@
             <div class="invalid-feedback">Informe o sexo corretamente.</div>
         </div>
 
+        <div class="form-row">
+            <label for="txtSenha">Senha</label>
+            <input type="password" id="txtSenha" name="senha" required>
+            <div class="invalid-feedback">Informe a senha corretamente.</div>
+        </div>
 
-        <label for="txtSenha">Senha</label>
-        <input type="password" id="txtSenha" name="senha" required>
         <label for="txtConfSenha">Confirmação de Senha</label>
         <input type="password" name="ConfSenha" id="txtConfSenha">
         <input type="submit" class="btn" value="Enviar">
