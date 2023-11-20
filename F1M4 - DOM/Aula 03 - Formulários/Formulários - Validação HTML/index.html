@@ -9,7 +9,24 @@
     <h1>Validação com HTML</h1>
     <hr>
     <form name="form1" action="#" method="GET">
-        
+        <label for="txtNome">Nome</label>
+        <input type="text" id="txtNome" name="nome" placeholder="Fulano de Tal" required>
+        <label for="txtEmail">E-mail</label>
+        <input type="email" id="txtEmail" name="email" placeholder="Fulano@email.com" required>
+        <label for="txtTelefone">Telefone</label>
+        <input type="text" id="txtTelefone" name="telefone" placeholder="(00) 00000-0000" pattern="(\d{2}\)\d{5}-\d{4}" required>
+        <label for="SelSexo">Sexo</label>
+        <select id="SelSexo" name="sexo" required>
+            <option value="" selected>Selecione o sexo</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+
+
+
+
+
+
     </form>
 </body>
 </html>
