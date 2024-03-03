@@ -55,7 +55,7 @@ class Funcionario extends Model{
                 type: DataTypes.INTEGER,
                 references:{
                     model: Setor,
-                    key: 'idsetor'
+                    key: 'idsetor'}
                 },
             nome:{
                 type: DataTypes.STRING(60),
@@ -68,7 +68,7 @@ class Funcionario extends Model{
                 type: DataTypes.STRING(15)
             }
 
-            }
+            
         }, {sequelize, modelName: 'funcionario', tableName: 'funcionarios'})
     }
 }
@@ -110,6 +110,17 @@ Funcionario.init(sequelize);
   // Listando objetos após exclusão
     const setores_exclusao = await Setor.findAll();
     console.log("Lista de setores após a exclusao: \n", JSON.stringify(setores_exclusao, null, 2), "\n\n");
+
+
+
+     // CREATE funcionario
+  const funcionario_create = await Funcionario.create({idsetor: 2, nome: "Ana", nascimento: "1979-04-12", telefone: "01219219"});
+
+  const funcionario_create1 = await Funcionario.create({idsetor: 3, nome: "Ivo", nascimento: "2000-12-01", telefone: "07280921"});
+
+    // Listando objetos funcionario
+    const funcionarios_listar = await Funcionario.findAll();
+    console.log("Lista de funcionarios: \n", JSON.stringify(funcionarios_listar, null, 2), "\n\n");
 
 })();
 
