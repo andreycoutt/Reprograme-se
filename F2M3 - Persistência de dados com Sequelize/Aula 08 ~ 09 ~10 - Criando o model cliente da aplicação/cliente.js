@@ -1,8 +1,8 @@
-const  Sequelize  = require("sequelize");
+const Sequelize = require('sequelize');
 const database = require('./db');
-const sequelize = require("./db");
 
-const Cliente = database.define('cliente', {
+
+const Cliente = database.define('cliente' ,{
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -24,7 +24,6 @@ const Cliente = database.define('cliente', {
         type: Sequelize.STRING,
         allowNull: false
     }
-})
-
+});
 
 module_exports = Cliente;
