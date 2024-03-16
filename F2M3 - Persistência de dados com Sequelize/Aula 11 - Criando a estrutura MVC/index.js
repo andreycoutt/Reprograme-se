@@ -2,6 +2,7 @@
 const database = require("./db/db");
 const express = require("express");
 const app = express();
+const Video = require("./models/Video");
 
 try{
   database.sync().then(()=>{
@@ -13,4 +14,4 @@ try{
 
 catch(erro){
   console.log("houve uma falha ao sincronizar com o banco de dados", erro);
-}
+}  
